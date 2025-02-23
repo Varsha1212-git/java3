@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JAVASCRIPTt</title>
+</head>
+<body>
+    <script>
+//Day of the Week Message
+//Scenario: Develop a webpage that displays a special message based on the current day of the week.
+
+//“Start your week strong!” for Monday.
+//“Keep going!” for Tuesday.
+//“Halfway there!” for Wednesday.
+//“Almost the weekend!” for Thursday.
+//“Happy Friday!” for Friday.
+//“Enjoy your weekend!” for Saturday and Sunday.
+let week = prompt("Enter day of the week").toLowerCase();
+
+if (week == "monday") {
+  console.log("start your day");
+} else if (week == "tuesday") {
+  console.log("start tuesday");
+} else if (week =="wednesday"){
+    console.log("Halfway there! ");
+}
+else if(week == "thursday"){
+    console.log("Almost the weekend!");
+}
+else if (week == "friday"){
+    console.log("Happy friday!");
+}
+else{
+    console.log("enjoy your weekend!");
+}
+
+//Traffic Light Simulation Scenario: Simulate a traffic light system.
+
+//“Stop” if the light is red.
+//“Get Ready” if the light is yellow.
+//“Go” if the light is green.
+
+let lights=prompt("Simulate a traffic light system.") .toLowerCase();
+if(lights == "red")
+{
+    console.log("Stop");
+}  else if(lights == "yelow")
+{
+    console.log("Get Ready");
+}
+else {
+    console.log("Go");
+}
+
+// Discount Calculator Scenario: Calculate the discount based on the total purchase amount.
+
+//“No discount” if the amount is less than $50.
+//“5% discount” if the amount is between $50 and $100.
+//“10% discount” if the amount is between $101 and $200.
+//“15% discount” if the amount is above $200.
+let pm= prompt("Enter the Purchase amount") .toLowerCase();
+if (pm <50){
+    
+    console.log("No Discount");
+}
+ else if (pm >=50 && pm<=100){
+    console.log("5% Discount");
+}
+else if (pm>=101 && pm<=200){
+
+    console.log("10% Discount");
+}
+else{
+    console.log("15% Discount");
+}
+
+//Restaurant Menu Scenario: You are developing a restaurant menu 
+//system that provides the price of a dish based on the dish name.
+
+//Task: Assume a variable dish holds the name of the dish as a string (e.g.,  "Biriyani", "shawarma", "Fried rice", "veg pula").
+// Print the price
+
+let dish = prompt("What's your tummy is craving for ?") .toLowerCase();
+if (dish =="manchuriya"){
+    console.log("50 + GST");
+}
+else if (dish =="Noodels"){
+    console.log("60 + GST")
+}
+else if (dish == "Fried rice")
+{
+    console.log("40 + GST")
+}
+else {
+    console.log("Is our menu not reached your expections?")
+}
+</script>
+</body>
+</html>
